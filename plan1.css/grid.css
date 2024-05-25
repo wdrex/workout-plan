@@ -1,0 +1,150 @@
+p{
+  font-family: arial;
+}
+
+.grid-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 20px;
+  margin-left: 90px;
+  margin-right: 90px;
+  margin-top: 50px;
+  justify-content: center;
+ }
+
+ /* Dideliems ekranams */
+@media (min-width: 1024px) {
+  .grid-div {
+      grid-template-columns: repeat(4, 1fr); /* 4 kolonos */
+  }
+}
+
+/* Vidutiniams ekranams */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-div {
+      grid-template-columns: repeat(3, 1fr); /* 3 kolonos */
+  }
+}
+
+/* Mažiems ekranams */
+@media (max-width: 767px) {
+  .grid-div {
+      grid-template-columns: repeat(2, 1fr); /* 2 kolonos */
+  }
+}
+
+ /* Dideliems ekranams */
+ @media (min-width: 1024px) {
+  .pvienas {
+    height: 35px
+  }
+}
+
+/* Vidutiniams ekranams */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pvienas {
+      height: 20px
+  }
+}
+
+/* Mažiems ekranams */
+@media (max-width: 767px) {
+  .pvienas {
+    height: 12px
+  }
+}
+
+ /* Dideliems ekranams */
+ @media (min-width: 1024px) {
+  .pirma-treniruote-container {
+    height: 250px;
+    max-width: 270px; 
+  }
+}
+
+/* Vidutiniams ekranams */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .pirma-treniruote-container {
+      height: 150px;
+      max-width: 170px;
+  }
+}
+
+/* Mažiems ekranams */
+@media (max-width: 767px) {
+  .pirma-treniruote-container {
+    height: 100px;
+    max-width: 100px;
+  }
+}
+
+ /* Dideliems ekranams */
+ @media (min-width: 1024px) {
+  .img-container{
+    height: 200px
+  }
+}
+
+/* Vidutiniams ekranams */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .img-container {
+      height: 100px
+  }
+}
+
+/* Mažiems ekranams */
+@media (max-width: 767px) {
+  .img-container {
+    height: 50px
+  }
+}
+
+
+.pirma-treniruote-container{
+  border-style: solid;
+  border-color: rgb(129, 129, 129);
+  background-color: rgba(165, 42, 42, 0.43);
+  border-radius: 10px;
+  border-width: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: auto;
+}
+
+.pirma-treniruote-container:hover{
+  border-color: red;
+  cursor: pointer;
+}
+
+.pirma-treniruote-img{
+  max-height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.img-container{
+  display: flex;
+  flex: 1;
+}
+
+.pvienas{
+  display: flex;
+  align-items: center;
+  display: flex;
+  justify-content:center;
+}
+
+.pirmap{
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2px;
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+  font-size: 1vw; /* 3% ekrano pločio */
+  /*font-size: clamp(0.1rem, 2vw, 1rem); /* Min dydis 1rem, max dydis 2rem, kinta tarp jų proporcingai ekrano dydžiui */
+
+}
