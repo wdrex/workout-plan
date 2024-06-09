@@ -1,36 +1,24 @@
-p{
-font-family: arial;
-}
-
 body {
-  margin: 0; /* Pašalina numatytąjį tarpą */
-  padding: 0; /* Pašalina numatytąjį tarpą */
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
   padding-top: 70px;
-}
-
-.page-img {
-  width: 100%; /* Nuotrauka užims visą puslapio pločių */
-  height: 100vh; /* Užtikrina, kad nuotrauka užimtų visas ekrano aukščio plotį */
-  object-fit: cover; /* Prisitaiko prie nuotraukos, užtikrinant, kad ji užimtų visas sritį */
-  top: 0;
-  left: 0;
-  position: fixed;
-  z-index: -1;
+  font-family: Arial, sans-serif;
 }
 
 .header {
   position: fixed;
   background-color: rgb(79, 79, 79);
   top: 0;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
   height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.user-name-div{
+.user-name-div {
   background-color: rgba(88, 71, 71, 0.651);
   cursor: pointer;
   padding-left: 10px;
@@ -38,7 +26,8 @@ body {
   box-shadow: 0px 0px 5px 5px rgba(229, 229, 229, 0.616);
   border-radius: 10px;
 }
-.user-name{
+
+.user-name {
   margin-left: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
