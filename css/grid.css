@@ -17,6 +17,12 @@
   justify-content: center;
 }
 
+@media (min-width: 468px) {
+  .grid-div {
+      grid-template-columns: repeat(1, 200px);
+  }
+}
+
 @media (min-width: 768px) {
   .grid-div {
       grid-template-columns: repeat(2, 200px);
